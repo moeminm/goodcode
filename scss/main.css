@@ -30,6 +30,10 @@ body {
   border-color: white;
 }
 
+.logo{
+    max-width: 80%;
+}
+
 .cta {
   display: inline-block;
   color: white;
