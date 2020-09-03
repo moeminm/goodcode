@@ -11,9 +11,13 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1480px;
   margin: 0 auto;
-  margin-top: 20px;
+  padding: 40px;
+}
+
+.navbar {
+  padding: 0;
 }
 
 .navbar-nav {
@@ -62,7 +66,7 @@ ul:not(:last-child), li:not(:last-child) {
       -ms-flex-align: center;
           align-items: center;
   height: 40vh;
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 4.375rem;
   background-color: #FCF8F2;
 }
@@ -166,6 +170,20 @@ ul:not(:last-child), li:not(:last-child) {
   margin-right: 5px;
 }
 
+.btn-primary {
+  display: inline-block;
+  color: white;
+  background-color: #5222D0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.modal-body {
+  font-weight: 300;
+}
+
 @media only screen and (max-width: 968px) {
   ul:not(:last-child), li:not(:last-child) {
     margin-right: 0px !important;
@@ -185,6 +203,7 @@ ul:not(:last-child), li:not(:last-child) {
     font-weight: 600;
     margin-bottom: 20px;
     line-height: 1;
+    margin-top: 10px;
   }
   .hero__heading--sub {
     display: block;
