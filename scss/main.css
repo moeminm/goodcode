@@ -10,6 +10,10 @@ body {
   font-size: 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1480px;
   margin: 0 auto;
@@ -30,8 +34,19 @@ body {
   border-color: white;
 }
 
-.logo{
-    max-width: 80%;
+.logo {
+  max-width: 80%;
+}
+
+.announcement {
+  background-color: #5222D0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.announcement p {
+  margin-bottom: 0;
 }
 
 .cta {
@@ -48,6 +63,12 @@ body {
   display: block;
   text-align: center;
   font-weight: 800;
+}
+
+.cta:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #6c43d4;
 }
 
 ul, li {
@@ -174,6 +195,35 @@ ul:not(:last-child), li:not(:last-child) {
   margin-right: 5px;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #5222D0;
+}
+
+.footer__links {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__links:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__links:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+}
+
 .btn-primary {
   display: inline-block;
   color: white;
@@ -199,7 +249,7 @@ ul:not(:last-child), li:not(:last-child) {
             flex-direction: column-reverse;
     height: 55vh;
     padding: 2rem;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .hero__heading--primary {
     display: block;
@@ -244,15 +294,49 @@ ul:not(:last-child), li:not(:last-child) {
   .challenges__card--img img {
     width: 100%;
   }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
+    background-color: #5222D0;
+  }
+  .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__links {
+    text-decoration: none;
+    color: white;
+  }
+  .footer__links:not(:last-child) {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 968px) and (max-width: 360px) {
   .hero {
     height: 70vh;
   }
 }
 
-@media only screen and (max-width: 1216px) {
+@media only screen and (max-width: 968px) and (max-width: 1216px) {
   .hero {
     height: 55vh;
   }
