@@ -164,7 +164,7 @@ ul, li{
 
     .hero{
         flex-direction: column-reverse;
-        height: 50vh;
+        height: 55vh;
         padding: 2rem;
         margin-top: 20px;
         &__heading{
@@ -208,3 +208,16 @@ ul, li{
         }
     }
 }
+
+@media only screen and (max-width: 360px){
+        .hero{
+            height: 70vh;
+        }
+}
+
+@media only screen and (max-width: 1216px){
+    .hero{
+        height: 55vh;
+    }
+}
+
