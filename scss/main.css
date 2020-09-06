@@ -53,7 +53,7 @@ html {
   display: inline-block;
   color: white;
   background-color: #5222D0;
-  padding: 15px 34px;
+  padding: 22px 38px;
   border-radius: 5px;
   text-decoration: none;
   max-width: 100%;
@@ -124,6 +124,10 @@ ul:not(:last-child), li:not(:last-child) {
   margin-bottom: 20px;
 }
 
+.formwrapper {
+  text-align: center;
+}
+
 .challenges {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +149,19 @@ ul:not(:last-child), li:not(:last-child) {
   border-radius: 5px;
   -webkit-box-shadow: 10px 10px 82px -32px #919191;
           box-shadow: 10px 10px 82px -32px #919191;
+  position: relative;
+}
+
+.challenges__card--price {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #5222D0;
+  font-weight: 700;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 999px;
 }
 
 .challenges__card--img {
