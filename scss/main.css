@@ -57,12 +57,14 @@ html {
   border-radius: 5px;
   text-decoration: none;
   max-width: 100%;
+  border: none;
 }
 
 .cta.download {
-  display: block;
+  display: inline-block;
   text-align: center;
   font-weight: 800;
+  width: 100%;
 }
 
 .cta:hover {
@@ -126,6 +128,12 @@ ul:not(:last-child), li:not(:last-child) {
 
 .formwrapper {
   text-align: center;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .challenges {
@@ -253,6 +261,25 @@ ul:not(:last-child), li:not(:last-child) {
 
 .modal-body {
   font-weight: 300;
+}
+
+.modal__included {
+  margin-top: 20px;
+}
+
+.modal__title {
+  font-size: 1.4rem;
+}
+
+.modal__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+svg {
+  fill: #14b988;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 968px) {

@@ -54,11 +54,13 @@ html{
     border-radius: 5px;
     text-decoration: none;
     max-width: 100%;
+    border: none;
 
     &.download{
-        display: block;
+        display: inline-block;
         text-align: center;
         font-weight: 800;
+        width: 100%;
     }
 
     &:hover{
@@ -110,6 +112,10 @@ ul, li{
 
 .formwrapper{
     text-align: center;
+}
+
+.flex-center{
+    justify-content: center;
 }
 
 .challenges{
@@ -213,6 +219,22 @@ ul, li{
     font-weight: 300;
 }
 
+.modal{
+    &__included{
+        margin-top: 20px;
+    }
+    &__title{
+        font-size: 1.4rem;
+    }
+    &__one{
+        display: flex;
+    }
+}
+
+svg{
+    fill: rgb(20, 185, 136);
+    margin-right: 10px;
+}
 
 @media only screen and (max-width: 968px){
     ul:not(:last-child), li:not(:last-child) {
@@ -294,18 +316,7 @@ ul, li{
     }
 }
 
-// @media only screen and (max-width: 360px){
-// //         .hero{
-// //             height: 90vh;
-// //         }
-// //         .navbar-brand{
-// //             margin-right: 0;
-// //         }
 
-// //         .logo{
-// //             max-width: 60%;
-// //         }
-// }
 
 @media only screen and (max-width: 1216px){
     .hero{
