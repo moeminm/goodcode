@@ -221,7 +221,7 @@ ul, li{
 
     .hero{
         flex-direction: column-reverse;
-        height: 55vh;
+        height: 70vh;
         padding: 2rem;
         margin-top: 40px;
         &__heading{
@@ -284,17 +284,39 @@ ul, li{
                 margin-right: 0px;
             }
     }
+
+    .navbar-brand{
+        margin-right: 0;
+    }
+
+    .logo{
+        max-width: 60%;
+    }
 }
 
-@media only screen and (max-width: 360px){
-        .hero{
-            height: 70vh;
-        }
-}
+// @media only screen and (max-width: 360px){
+// //         .hero{
+// //             height: 90vh;
+// //         }
+// //         .navbar-brand{
+// //             margin-right: 0;
+// //         }
+
+// //         .logo{
+// //             max-width: 60%;
+// //         }
+// }
 
 @media only screen and (max-width: 1216px){
     .hero{
-        height: 55vh;
+        height: 70vh;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+
+    .logo{
+        max-width: 60%;
     }
 }
 }

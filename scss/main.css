@@ -264,7 +264,7 @@ ul:not(:last-child), li:not(:last-child) {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    height: 55vh;
+    height: 70vh;
     padding: 2rem;
     margin-top: 40px;
   }
@@ -345,17 +345,23 @@ ul:not(:last-child), li:not(:last-child) {
     margin-bottom: 20px;
     margin-right: 0px;
   }
-}
-
-@media only screen and (max-width: 968px) and (max-width: 360px) {
-  .hero {
-    height: 70vh;
+  .footer .navbar-brand {
+    margin-right: 0;
+  }
+  .footer .logo {
+    max-width: 60%;
   }
 }
 
 @media only screen and (max-width: 968px) and (max-width: 1216px) {
   .hero {
-    height: 55vh;
+    height: 70vh;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .logo {
+    max-width: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */
