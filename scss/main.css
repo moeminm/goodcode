@@ -137,22 +137,16 @@ ul:not(:last-child), li:not(:last-child) {
 }
 
 .challenges {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
   margin-top: 80px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .challenges__card {
-  max-width: 304px;
+  max-width: 100%;
   height: 100%;
   border-radius: 5px;
   -webkit-box-shadow: 10px 10px 82px -32px #919191;
@@ -311,18 +305,11 @@ svg {
     margin-bottom: 20px;
   }
   .challenges {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-top: 80px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
   }
   .challenges__card {
     max-width: 100%;
@@ -331,9 +318,6 @@ svg {
     -webkit-box-shadow: 10px 10px 82px -32px #919191;
             box-shadow: 10px 10px 82px -32px #919191;
     position: relative;
-  }
-  .challenges__card:not(:last-child) {
-    margin-bottom: 40px;
   }
   .challenges__card--img img {
     width: 100%;
