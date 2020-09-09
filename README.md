@@ -5,7 +5,7 @@ Good Code offers free (and paid) high quality Adobe XD templates that you can us
 
 # Current Roadmap
 
-* Convert app to React instead of static HTML and CSS.
+* Convert app to React instead of static HTML and CSS. [x - done, visit at http://good-code.netlify.app/]
 * Add modal to view more information about the challenge before downloading or buying.
 * Add more templates.
 
