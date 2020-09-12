@@ -45,6 +45,11 @@ html {
   padding: 10px;
 }
 
+.announcement__tag{
+color:white;
+text-decoration: none;
+}
+
 .announcement p {
   margin-bottom: 0;
 }
