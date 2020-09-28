@@ -45,13 +45,17 @@ html {
   padding: 10px;
 }
 
-.announcement__tag{
-color:white;
-text-decoration: none;
-}
-
 .announcement p {
   margin-bottom: 0;
+}
+
+.announcement__tag {
+  color: white;
+}
+
+.announcement__tag:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .cta {
